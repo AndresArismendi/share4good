@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @usuario_seguro.user %>
+</p>
+
+<p>
+  <strong>Usuario seguro enabled:</strong>
+  <%= @usuario_seguro.usuario_seguro_enabled %>
+</p>
+
+<p>
+  <strong>Usuario seguro date:</strong>
+  <%= @usuario_seguro.usuario_seguro_date %>
+</p>
+
+<%= link_to 'Edit', edit_usuario_seguro_path(@usuario_seguro) %> |
+<%= link_to 'Back', usuario_seguros_path %>

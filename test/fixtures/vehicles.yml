@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  colour_id: 
+  brand_id: 
+  vehicle_number_plate: MyString
+
+two:
+  colour_id: 
+  brand_id: 
+  vehicle_number_plate: MyString

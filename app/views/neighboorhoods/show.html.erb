@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>City:</strong>
+  <%= @neighboorhood.city %>
+</p>
+
+<p>
+  <strong>Neighboorhood nombre:</strong>
+  <%= @neighboorhood.neighboorhood_nombre %>
+</p>
+
+<%= link_to 'Edit', edit_neighboorhood_path(@neighboorhood) %> |
+<%= link_to 'Back', neighboorhoods_path %>

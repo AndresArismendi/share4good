@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  neighboorhood_id: 
+  nei_neighboorhood_id: 
+  tri_trip_id: 
+  trip_hour: 2016-01-08
+  trip_price: 1
+  trip_accomplished: 1
+  trip_capacity: 1
+  trip_luggage: false
+  trip_pet: false
+  trip_smoker: false
+
+two:
+  neighboorhood_id: 
+  nei_neighboorhood_id: 
+  tri_trip_id: 
+  trip_hour: 2016-01-08
+  trip_price: 1
+  trip_accomplished: 1
+  trip_capacity: 1
+  trip_luggage: false
+  trip_pet: false
+  trip_smoker: false

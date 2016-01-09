@@ -1,0 +1,33 @@
+<h1>Listing writes_a_references</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Trip</th>
+      <th>Reference</th>
+      <th>Is driver</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @writes_a_references.each do |writes_a_reference| %>
+      <tr>
+        <td><%= writes_a_reference.user %></td>
+        <td><%= writes_a_reference.trip %></td>
+        <td><%= writes_a_reference.reference %></td>
+        <td><%= writes_a_reference.is_driver %></td>
+        <td><%= link_to 'Show', writes_a_reference %></td>
+        <td><%= link_to 'Edit', edit_writes_a_reference_path(writes_a_reference) %></td>
+        <td><%= link_to 'Destroy', writes_a_reference, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Writes a reference', new_writes_a_reference_path %>

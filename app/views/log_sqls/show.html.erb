@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Log sql tms:</strong>
+  <%= @log_sql.log_sql_tms %>
+</p>
+
+<p>
+  <strong>Log sql table:</strong>
+  <%= @log_sql.log_sql_table %>
+</p>
+
+<p>
+  <strong>Log sql operac:</strong>
+  <%= @log_sql.log_sql_operac %>
+</p>
+
+<p>
+  <strong>Log sql user:</strong>
+  <%= @log_sql.log_sql_user %>
+</p>
+
+<p>
+  <strong>Log sql dat antes:</strong>
+  <%= @log_sql.log_sql_dat_antes %>
+</p>
+
+<p>
+  <strong>Log sql dat dsps:</strong>
+  <%= @log_sql.log_sql_dat_dsps %>
+</p>
+
+<p>
+  <strong>Log sql ope det:</strong>
+  <%= @log_sql.log_sql_ope_det %>
+</p>
+
+<%= link_to 'Edit', edit_log_sql_path(@log_sql) %> |
+<%= link_to 'Back', log_sqls_path %>

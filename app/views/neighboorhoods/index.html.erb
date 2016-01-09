@@ -1,0 +1,29 @@
+<h1>Listing neighboorhoods</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>City</th>
+      <th>Neighboorhood nombre</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @neighboorhoods.each do |neighboorhood| %>
+      <tr>
+        <td><%= neighboorhood.city %></td>
+        <td><%= neighboorhood.neighboorhood_nombre %></td>
+        <td><%= link_to 'Show', neighboorhood %></td>
+        <td><%= link_to 'Edit', edit_neighboorhood_path(neighboorhood) %></td>
+        <td><%= link_to 'Destroy', neighboorhood, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Neighboorhood', new_neighboorhood_path %>

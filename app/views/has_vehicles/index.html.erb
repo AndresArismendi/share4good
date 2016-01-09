@@ -1,0 +1,29 @@
+<h1>Listing has_vehicles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Vehiculo</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @has_vehicles.each do |has_vehicle| %>
+      <tr>
+        <td><%= has_vehicle.vehiculo %></td>
+        <td><%= has_vehicle.user %></td>
+        <td><%= link_to 'Show', has_vehicle %></td>
+        <td><%= link_to 'Edit', edit_has_vehicle_path(has_vehicle) %></td>
+        <td><%= link_to 'Destroy', has_vehicle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Has vehicle', new_has_vehicle_path %>

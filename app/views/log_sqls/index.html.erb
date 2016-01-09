@@ -1,0 +1,39 @@
+<h1>Listing log_sqls</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Log sql tms</th>
+      <th>Log sql table</th>
+      <th>Log sql operac</th>
+      <th>Log sql user</th>
+      <th>Log sql dat antes</th>
+      <th>Log sql dat dsps</th>
+      <th>Log sql ope det</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @log_sqls.each do |log_sql| %>
+      <tr>
+        <td><%= log_sql.log_sql_tms %></td>
+        <td><%= log_sql.log_sql_table %></td>
+        <td><%= log_sql.log_sql_operac %></td>
+        <td><%= log_sql.log_sql_user %></td>
+        <td><%= log_sql.log_sql_dat_antes %></td>
+        <td><%= log_sql.log_sql_dat_dsps %></td>
+        <td><%= log_sql.log_sql_ope_det %></td>
+        <td><%= link_to 'Show', log_sql %></td>
+        <td><%= link_to 'Edit', edit_log_sql_path(log_sql) %></td>
+        <td><%= link_to 'Destroy', log_sql, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Log sql', new_log_sql_path %>

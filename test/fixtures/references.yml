@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  reference_mark: 1
+  reference_comment: MyString
+  reference_answer: MyString
+  reference_date: 2016-01-08
+
+two:
+  reference_mark: 1
+  reference_comment: MyString
+  reference_answer: MyString
+  reference_date: 2016-01-08

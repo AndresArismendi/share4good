@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Reference mark:</strong>
+  <%= @reference.reference_mark %>
+</p>
+
+<p>
+  <strong>Reference comment:</strong>
+  <%= @reference.reference_comment %>
+</p>
+
+<p>
+  <strong>Reference answer:</strong>
+  <%= @reference.reference_answer %>
+</p>
+
+<p>
+  <strong>Reference date:</strong>
+  <%= @reference.reference_date %>
+</p>
+
+<%= link_to 'Edit', edit_reference_path(@reference) %> |
+<%= link_to 'Back', references_path %>

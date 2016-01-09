@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 
+  suggestion_texto: MyString
+  suggestion_fecha: 2016-01-08
+
+two:
+  user_id: 
+  suggestion_texto: MyString
+  suggestion_fecha: 2016-01-08

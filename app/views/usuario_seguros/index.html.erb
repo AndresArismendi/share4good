@@ -1,0 +1,31 @@
+<h1>Listing usuario_seguros</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Usuario seguro enabled</th>
+      <th>Usuario seguro date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @usuario_seguros.each do |usuario_seguro| %>
+      <tr>
+        <td><%= usuario_seguro.user %></td>
+        <td><%= usuario_seguro.usuario_seguro_enabled %></td>
+        <td><%= usuario_seguro.usuario_seguro_date %></td>
+        <td><%= link_to 'Show', usuario_seguro %></td>
+        <td><%= link_to 'Edit', edit_usuario_seguro_path(usuario_seguro) %></td>
+        <td><%= link_to 'Destroy', usuario_seguro, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Usuario seguro', new_usuario_seguro_path %>

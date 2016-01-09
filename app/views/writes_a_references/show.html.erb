@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @writes_a_reference.user %>
+</p>
+
+<p>
+  <strong>Trip:</strong>
+  <%= @writes_a_reference.trip %>
+</p>
+
+<p>
+  <strong>Reference:</strong>
+  <%= @writes_a_reference.reference %>
+</p>
+
+<p>
+  <strong>Is driver:</strong>
+  <%= @writes_a_reference.is_driver %>
+</p>
+
+<%= link_to 'Edit', edit_writes_a_reference_path(@writes_a_reference) %> |
+<%= link_to 'Back', writes_a_references_path %>

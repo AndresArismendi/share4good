@@ -1,0 +1,33 @@
+<%= form_for(@writes_a_reference) do |f| %>
+  <% if @writes_a_reference.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@writes_a_reference.errors.count, "error") %> prohibited this writes_a_reference from being saved:</h2>
+
+      <ul>
+      <% @writes_a_reference.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user %><br>
+    <%= f.text_field :user %>
+  </div>
+  <div class="field">
+    <%= f.label :trip %><br>
+    <%= f.text_field :trip %>
+  </div>
+  <div class="field">
+    <%= f.label :reference %><br>
+    <%= f.text_field :reference %>
+  </div>
+  <div class="field">
+    <%= f.label :is_driver %><br>
+    <%= f.check_box :is_driver %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

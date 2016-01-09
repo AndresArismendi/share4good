@@ -1,0 +1,33 @@
+<%= form_for(@reference) do |f| %>
+  <% if @reference.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@reference.errors.count, "error") %> prohibited this reference from being saved:</h2>
+
+      <ul>
+      <% @reference.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :reference_mark %><br>
+    <%= f.number_field :reference_mark %>
+  </div>
+  <div class="field">
+    <%= f.label :reference_comment %><br>
+    <%= f.text_field :reference_comment %>
+  </div>
+  <div class="field">
+    <%= f.label :reference_answer %><br>
+    <%= f.text_field :reference_answer %>
+  </div>
+  <div class="field">
+    <%= f.label :reference_date %><br>
+    <%= f.date_select :reference_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

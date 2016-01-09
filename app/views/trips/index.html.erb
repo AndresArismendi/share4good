@@ -1,0 +1,45 @@
+<h1>Listing trips</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Neighboorhood</th>
+      <th>Nei neighboorhood</th>
+      <th>Tri trip</th>
+      <th>Trip hour</th>
+      <th>Trip price</th>
+      <th>Trip accomplished</th>
+      <th>Trip capacity</th>
+      <th>Trip luggage</th>
+      <th>Trip pet</th>
+      <th>Trip smoker</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trips.each do |trip| %>
+      <tr>
+        <td><%= trip.neighboorhood %></td>
+        <td><%= trip.nei_neighboorhood %></td>
+        <td><%= trip.tri_trip %></td>
+        <td><%= trip.trip_hour %></td>
+        <td><%= trip.trip_price %></td>
+        <td><%= trip.trip_accomplished %></td>
+        <td><%= trip.trip_capacity %></td>
+        <td><%= trip.trip_luggage %></td>
+        <td><%= trip.trip_pet %></td>
+        <td><%= trip.trip_smoker %></td>
+        <td><%= link_to 'Show', trip %></td>
+        <td><%= link_to 'Edit', edit_trip_path(trip) %></td>
+        <td><%= link_to 'Destroy', trip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trip', new_trip_path %>

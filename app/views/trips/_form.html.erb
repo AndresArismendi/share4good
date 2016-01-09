@@ -1,0 +1,57 @@
+<%= form_for(@trip) do |f| %>
+  <% if @trip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@trip.errors.count, "error") %> prohibited this trip from being saved:</h2>
+
+      <ul>
+      <% @trip.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :neighboorhood %><br>
+    <%= f.text_field :neighboorhood %>
+  </div>
+  <div class="field">
+    <%= f.label :nei_neighboorhood %><br>
+    <%= f.text_field :nei_neighboorhood %>
+  </div>
+  <div class="field">
+    <%= f.label :tri_trip %><br>
+    <%= f.text_field :tri_trip %>
+  </div>
+  <div class="field">
+    <%= f.label :trip_hour %><br>
+    <%= f.date_select :trip_hour %>
+  </div>
+  <div class="field">
+    <%= f.label :trip_price %><br>
+    <%= f.number_field :trip_price %>
+  </div>
+  <div class="field">
+    <%= f.label :trip_accomplished %><br>
+    <%= f.number_field :trip_accomplished %>
+  </div>
+  <div class="field">
+    <%= f.label :trip_capacity %><br>
+    <%= f.number_field :trip_capacity %>
+  </div>
+  <div class="field">
+    <%= f.label :trip_luggage %><br>
+    <%= f.check_box :trip_luggage %>
+  </div>
+  <div class="field">
+    <%= f.label :trip_pet %><br>
+    <%= f.check_box :trip_pet %>
+  </div>
+  <div class="field">
+    <%= f.label :trip_smoker %><br>
+    <%= f.check_box :trip_smoker %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
